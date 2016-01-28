@@ -12,6 +12,7 @@
 		461857821C51CE220068F4ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461857801C51CE220068F4ED /* Main.storyboard */; };
 		461857841C51CE220068F4ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 461857831C51CE220068F4ED /* Assets.xcassets */; };
 		461857871C51CE220068F4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 461857851C51CE220068F4ED /* LaunchScreen.storyboard */; };
+		469699731C59B60C00B66E8F /* MQChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469699721C59B60C00B66E8F /* MQChecklistItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		461857831C51CE220068F4ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		461857861C51CE220068F4ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		461857881C51CE220068F4ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		469699721C59B60C00B66E8F /* MQChecklistItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQChecklistItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				461857831C51CE220068F4ED /* Assets.xcassets */,
 				461857851C51CE220068F4ED /* LaunchScreen.storyboard */,
 				461857881C51CE220068F4ED /* Info.plist */,
+				469699721C59B60C00B66E8F /* MQChecklistItem.swift */,
 			);
 			path = Checklists;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				4618577F1C51CE220068F4ED /* MQChecklistViewController.swift in Sources */,
 				4618577D1C51CE220068F4ED /* AppDelegate.swift in Sources */,
+				469699731C59B60C00B66E8F /* MQChecklistItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +290,7 @@
 				4618578D1C51CE220068F4ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
