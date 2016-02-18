@@ -66,10 +66,14 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acq-eL-Pcw">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="清单名称" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acq-eL-Pcw">
                                                     <rect key="frame" x="8" y="7" width="584" height="30"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="done" destination="dzc-nM-lnf" eventType="editingDidEndOnExit" id="GKU-Fq-TL6"/>
+                                                        <outlet property="delegate" destination="dzc-nM-lnf" id="ua8-Ef-gjh"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -88,12 +92,16 @@
                                 <action selector="cancel" destination="dzc-nM-lnf" id="cYC-lQ-ZW4"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ePg-jE-DS5">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="done" id="ePg-jE-DS5">
                             <connections>
                                 <action selector="done" destination="dzc-nM-lnf" id="JQQ-sB-6CU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneBarButton" destination="ePg-jE-DS5" id="gyC-Xs-gty"/>
+                        <outlet property="textField" destination="acq-eL-Pcw" id="SQM-Mg-Aio"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lh-3T-7Ar" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
